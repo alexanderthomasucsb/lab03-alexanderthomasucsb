@@ -3,6 +3,13 @@
 using namespace std;
 
 int main(int argc, char *argv[])  {
+        
+        if (argc != 5) {
+                cerr << "Usage: " << argv[0] << " num1 num2 num3 num4" << endl;
+                cerr << " Prints smallest of the three numbers" << endl;
+                exit(1);
+        }
+        
         int a = atoi(argv[1]);
         int b = atoi(argv[2]);
         int c = atoi(argv[3]);
